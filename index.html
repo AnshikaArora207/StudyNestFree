@@ -1,92 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyNestFree</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="new.css">
-</head>
-<body class="back text-white">
-    <div class="bg-black flex sm:px-8 sm:justify-between justify-around">
-        <div>
-            <img class="w-[100px]" src="logo.jpg" alt="">
-            <p class="">StudyNestFree</p>
-        </div>
-        <div class="hidden sm:block mx-5 my-auto">
-            <a class="sm:px-6" href="/">HOME</a>
-            <a class="sm:px-6" href="#about">ABOUT US</a>
-        </div>
-        <div class="my-auto">
-            <a class="text-slate-600 font-bold" href="#contact">CONTACT US</a>
-        </div>
-    </div>
-    <div class="md:flex md:flex-row ">
-        <div class="border-l-2 border-yellow-500 rounded-lg px-6 w-[80vw] my-[15vh] mx-[8vw] md:w-[70vw] md:my-10 md:py-4">
-            <h1 class=" my-12 text-5xl font-bold">Hello Geeks!</h1>
-            <h3 class=" text-3xl">Welcome to the <span class="bg-cyan-500">HUB</span> of free resources.</h3>
-            <p class="hidden md:block text-xl">With a vast array of courses, expert instructors, and an engaging, user-friendly interface, we've redefined the way you learn. Whether you're looking to advance your career, explore new interests, or simply expand your horizons, we're here to empower you.</p>
-        </div>
-        <div class="border-r-2 border-yellow-500 rounded-lg mx-[8vw] flex flex-row-reverse px-6 md:h-[300px] md:my-10 md:py-4 lg:h-[500px]">
-            <img class="w-[300px] h-[300px] md:w-[500px] lg:h-[500px] lg:w-[700px]" src="welcome1_canva-removebg-preview.png" alt="">
-        </div>
-    </div>
-    <p class="text-center w-[60vw] mx-auto border-b-2 border-cyan-400 m-2 p-4 md:w-[40vw]">Join the e-learning party and supercharge your brainpower with us!</p>
-    <div class="text-center m-3">
-        <button class="bg-gradient-to-r from-blue-400 to-indigo-700 hover:from-pink-500 hover:to-yellow-500 mx-auto p-3 rounded-lg lg:my-6 shadow-cyan-400/80 shadow-lg"> Our Memories <3 </button>
-    </div>
-    <div class="">
-        <h1 class="text-3xl text-center my-2">Resources For</h1>
-        <div class="flex flex-col flex-wrap mx-auto w-[60vw] my-4 md:flex-row md:w-[80vw] md:justify-between lg:w-[90vw]">
-            <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
-                <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="iot,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">Internet of Things</h3>
-                <p class="text-slate-500 px-4 pb-2">A network of interrelated devices that connect and exchange data with other IoT devices and the cloud.</p>
-            </div>
-            <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
-                <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="app,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">App Development</h3>
-                <p class="text-slate-500 px-4 pb-2">Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.</p>
-            </div>
-            <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
-                <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="web,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">Web Development</h3>
-                <p class="text-slate-500 px-4 pb-2">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
-            </div>
-            <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
-                <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="ai,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">Machine Learning</h3>
-                <p class="text-slate-500 px-4 pb-2">Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login + Firebase Database</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="new-form.css">
+    </head>
+    <body>
+        <div class="b">
+            <div class="main">
+                <input type="checkbox" name="" id="chk" aria-hidden="true">
+                <div class="signup">
+                        <label for="chk" aria-hidden="true">Sign Up</label>
+                        <div class="temp">
+                            <input id="full_name" type="text" name="txt" placeholder="Username">
+                            <input id="email" type="email" name="email" placeholder="Your Email">
+                            <input id="password" type="password" name="pswd" placeholder="Password">
+                            <button id="Signup" onclick="register()"><a id="next" href="#">Sign Up</a></button>
+                        </div>
+                </div>
+                <div class="login">
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <div class="temp">
+                            <input id="old_email" type="email" name="email" placeholder="Your Email">
+                            <input id="old_pswd" type="password" name="pswd" placeholder="Password">
+                            <button onclick="login()"><a id="next" href="#">Login</a></button>
+                        </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- <div>
-        <h1 class="text-3xl text-center my-2">Memories : The Love Wall</h1>
-    </div> -->
-    <div id="contact" class="bg-violet-950 m-4 p-4 rounded-xl lg:w-[50vw] lg:inline-block">
-        <p class="text-slate-500">Get in touch.</p>
-        <h1 class="text-3xl my-2">Contact</h1>
-        <div class="p-4 ">
-            <h3>Your Name</h3>
-            <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="text" name="" id="" placeholder="What is your good name?">
-        </div>
-        <div class="p-4">
-            <h3>Your Email</h3>
-            <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="email" name="" id="" placeholder="What is email address?">
-        </div>
-        <div class="p-4">
-            <h3>Your Message</h3>
-            <textarea class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" name="" id="" cols="50" rows="10" placeholder="Write your message here"></textarea>
-        </div>
-        <div class="p-4">
-            <button class="bg-violet-900 py-3 px-6 rounded-xl hover:bg-blue-950">Send</button>
-        </div>
-    </div>
-    <div class="hidden lg:inline-block">
-        <img class="h-[50vh]" src="" alt="">
-    </div>
-    <div class="bg-black text-center p-1">
-        <p>Copyright &copy; xyz@2023</p>
-    </div>
-</body>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
+ 
 </html>
