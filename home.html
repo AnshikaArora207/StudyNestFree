@@ -14,8 +14,8 @@
             <p class="font-extrabold text-xl m-auto">StudyNestFree</p>
         </div>
         <div class="hidden sm:block mx-5 my-auto">
-            <a class="sm:px-6" href="/">HOME</a>
-            <a class="sm:px-6" href="#about">ABOUT US</a>
+            <a class="sm:px-6" href="home.html">HOME</a>
+            <a class="sm:px-6" href="about.html">ABOUT US</a>
             <a class="sm:px-6" href="#contact">CONTACT US</a>
         </div>
     </div>
@@ -31,29 +31,29 @@
     </div>
     <p class="text-center w-[60vw] mx-auto border-b-2 border-cyan-400 m-2 p-4 md:w-[40vw]">Join the e-learning party and supercharge your brainpower with us!</p>
     <div class="text-center m-3">
-        <button class="bg-gradient-to-r from-blue-400 to-indigo-700 hover:from-pink-500 hover:to-yellow-500 mx-auto p-3 rounded-lg lg:my-6 shadow-cyan-400/80 shadow-lg"> Our Memories <3 </button>
+        <button class="bg-gradient-to-r from-blue-400 to-indigo-700 hover:from-pink-500 hover:to-yellow-500 mx-auto p-3 rounded-lg lg:my-6 shadow-cyan-400/80 shadow-lg"><a href="comment.html">Comments</a></button>
     </div>
     <div class="">
         <h1 class="text-3xl text-center my-2">Resources For</h1>
         <div class="flex flex-col flex-wrap mx-auto w-[60vw] my-4 md:flex-row md:w-[80vw] md:justify-between lg:w-[90vw]">
             <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
                 <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="iot,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">Internet of Things</h3>
+                <h3 class="text-black font-bold px-4 text-center"><a href="iot.html">Internet of Things</a></h3>
                 <p class="text-slate-500 px-4 pb-2">A network of interrelated devices that connect and exchange data with other IoT devices and the cloud.</p>
             </div>
             <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
                 <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="app,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">App Development</h3>
+                <h3 class="text-black font-bold px-4 text-center"><a href="appD.html">App Development</a></h3>
                 <p class="text-slate-500 px-4 pb-2">Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.</p>
             </div>
             <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
                 <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="web,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">Web Development</h3>
+                <h3 class="text-black font-bold px-4 text-center"><a href="webD.html">Web Development</a></h3>
                 <p class="text-slate-500 px-4 pb-2">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
             </div>
             <div class="bg-white rounded-lg flex flex-col items-center shadow-cyan-400/80 shadow-xl my-4 md:w-[30vw] lg:w-[18vw]">
                 <img class="w-[200px] h-[200px] p-4 place-content-center rounded-lg border-black hover:blur-[2px]" src="ai,canva.png" alt="">
-                <h3 class="text-black font-bold px-4 text-center">Machine Learning</h3>
+                <h3 class="text-black font-bold px-4 text-center"><a href="ml.html">Machine Learning</a></h3>
                 <p class="text-slate-500 px-4 pb-2">Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
             </div>
         </div>
@@ -61,21 +61,28 @@
     <div id="contact" class="bg-violet-950 m-4 p-4 rounded-xl lg:w-[50vw] lg:inline-block">
         <p class="text-slate-500">Get in touch.</p>
         <h1 class="text-3xl my-2">Contact</h1>
+        <form action="https://formspree.io/f/mleyqvgn" method="POST">
         <div class="p-4 ">
-            <h3>Your Name</h3>
-            <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="text" name="" id="" placeholder="What is your good name?">
+                <h3>Your Name</h3>
+            <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="text" name="name" id="form-name" required autocomplete="off" placeholder="What is your good name?">
         </div>
         <div class="p-4">
             <h3>Your Email</h3>
-            <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="email" name="" id="" placeholder="What is email address?">
+            <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="email" name="email" id="form-email" required autocomplete="off" placeholder="What is email address?">
         </div>
+        <div class="p-4 ">
+            <h3>Subject</h3>
+        <input class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" type="text" name="subject" id="form-subject" required placeholder="Write the Subject here">
+    </div>
         <div class="p-4">
             <h3>Your Message</h3>
-            <textarea class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" name="" id="" cols="50" rows="10" placeholder="Write your message here"></textarea>
+            <textarea class="bg-violet-900 my-3 w-[70%] p-3 rounded-xl" name="message" id="form-message" required cols="50" rows="10" placeholder="Write your message here"></textarea>
         </div>
         <div class="p-4">
-            <button class="bg-violet-900 py-3 px-6 rounded-xl hover:bg-blue-950">Send</button>
+            <button type="submit" class="bg-violet-900 py-3 px-6 rounded-xl hover:bg-blue-950">Send</button>
         </div>
+        </form>
+            
     </div>
     <div class="hidden lg:inline-block">
         <img class="h-[50vh]" src="" alt="">
