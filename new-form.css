@@ -13,8 +13,10 @@
     background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 .main{
-    height: 500px;
-    width: 350px;
+    /* height: 500px;
+    width: 350px; */
+    height: 60vh;
+    width: 30vw;
     background: red;
     overflow: hidden;
     background: url(graphic.png);
